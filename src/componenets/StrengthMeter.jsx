@@ -37,13 +37,12 @@ function StrengthMeter({ password }) {
         <div className="strength-meter-text">
           {calculatePasswordStrength(password)}
         </div>
-      </div>
-
-      <div
+        <div
         className={`strength-meter ${calculatePasswordStrength(
           password
         ).toLowerCase()}`}
       ></div>
+      </div>
     </div>
   );
 }
