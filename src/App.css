@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
 :root {
-  --bg-color: #2D3250; /* Dark background color */
-  --text-color: #fff; /* Light text color */
-  --main-bg-color: #3B3486; /* Darker background color */
-  --box-shadow-color: rgba(138, 138, 138, 0); /* Adjusted box shadow */
-  --border-color: none; /* Darker border color */
-  --accent-color: #39A7FF; /* Accent color */
-  --input-bg-color: #864AF9; /* Dark background color for inputs */
-  --copy-button-hover-color: #752bff; /* Darker background color on copy button hover */
-  --button-bg-color: #864AF9; /* Darker background color for buttons */
-  --button-hover-color: #752bff; /* Darker background color for buttons on hover */
-  --strength-bg-color: #864AF9; /* Darker background color for strength container */
+  --bg-color: #1b1b1b; 
+  --text-color: #fff; 
+  --main-bg-color: #190482; 
+  --box-shadow-color: rgba(138, 138, 138, 0); 
+  --border-color: none; 
+  --accent-color: #39A7FF; 
+  --input-bg-color: #4E4FEB; 
+  --button-bg-color: #4E4FEB; 
+  --button-hover-color: #3e3eff; 
+  --strength-bg-color: #4E4FEB; 
 }
 
 body {
