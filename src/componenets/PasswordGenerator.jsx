@@ -54,7 +54,7 @@ function PasswordGenerator() {
           <Checkbox label="Include Lowercase" checked={includeLowercase} onChange={() => setIncludeLowercase(!includeLowercase)} />
           <Checkbox label="Include Numbers" checked={includeNumbers} onChange={() => setIncludeNumbers(!includeNumbers)} />
           <Checkbox label="Include Special Characters" checked={includeSpecial} onChange={() => setIncludeSpecial(!includeSpecial)} />
-          <button onClick={handleGeneratePassword}>Generate</button>
+          <button className='generate-button' onClick={handleGeneratePassword}>Generate</button>
           <StrengthMeter password={password} />
         </div>
       </div>
