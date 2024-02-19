@@ -1,0 +1,184 @@
+
+:root {
+  --bg-color: #2D3250; /* Dark background color */
+  --text-color: #fff; /* Light text color */
+  --main-bg-color: #3B3486; /* Darker background color */
+  --box-shadow-color: rgba(138, 138, 138, 0); /* Adjusted box shadow */
+  --border-color: none; /* Darker border color */
+  --accent-color: #39A7FF; /* Accent color */
+  --input-bg-color: #864AF9; /* Dark background color for inputs */
+  --copy-button-hover-color: #752bff; /* Darker background color on copy button hover */
+  --button-bg-color: #864AF9; /* Darker background color for buttons */
+  --button-hover-color: #752bff; /* Darker background color for buttons on hover */
+  --strength-bg-color: #864AF9; /* Darker background color for strength container */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ysabeau SC', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+  padding: 30px;
+  width: 320px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  background-color: var(--input-bg-color);
+  height: 50px;
+  border-radius: 5px;
+}
+
+.password-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+.copy-button {
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 0 3px 0;
+  background-color: var(--input-bg-color);
+}
+
+.copy-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.copy-button:hover {
+  background-color: var(--main-bg-color);
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.length label {
+  margin-bottom: 10px;
+}
+
+.length input[type="range"] {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-input {
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.strength-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: var(--strength-bg-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.strength-container label {
+  font-weight: 500;
+}
+
+.strength-meter-container {
+  display: flex;
+  height: 50px;
+
+}
+.strength-meter {
+  margin: 10px;
+  width: 50px; /* Adjust as needed */
+  height: 10px;
+  border-radius: 5px;
+
+}
+
+.strength-meter-text {
+  margin: 16.5px 0px 0 50px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+
+}
+
+.strength-meter.weak {
+  background-color: #ff0000; /* Weak color */
+}
+
+.strength-meter.medium {
+  background-color: #ffbf00; /* Medium color */
+}
+
+.strength-meter.strong {
+  background-color: #4CAF50; /* Strong color */
+}
+
+.strength-meter.very-strong {
+  background-color: #00ff0d; /* Very Strong color */
+}
